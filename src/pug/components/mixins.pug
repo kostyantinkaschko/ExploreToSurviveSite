@@ -1,0 +1,44 @@
+mixin Vitya(vitya)
+    a(href=vitya.href target="_blank")
+        img(src=vitya.img, alt=vitya.alt, itemprop="image")
+        p(itemprop="headline") #{vitya.header}
+        div(class=vitya.icon itemprop="mainEntity")
+mixin topline(menu)
+    .top-line(itemscope itemtype="https://schema.org/SiteNavigationElement" itemprop="headline")
+        .wrapper
+            section.rightside
+                .menu
+                    nav
+                        .border
+                        ul.menu-list
+                            li
+                                a(href="index.html" class="home" itemprop="url") 
+                                    p(itemprop="name") H.O.M.E
+                            li
+                                a(href="questions.html" itemprop="url") 
+                                    p(itemprop="name") F.A.Q
+                            li 
+                                a(href="policy.html" itemprop="url") 
+                                    p(itemprop="name") P.R.I.V.A.C.Y P.O.L.I.C.Y
+
+mixin topline(menubg)
+    .top-line
+        .wrapper
+            section.rightside
+                .menu
+                    nav
+                        .border
+                        ul.menu-list
+                            li
+                                a(href="index.html" class="home" itemprop="url") H.O.M.E
+                            li
+                                a(href="questions.html" itemprop="url") F.A.Q
+                            li 
+                                a(href="policy.html" itemprop="url") P.R.I.V.A.C.Y P.O.L.I.C.Y
+                            //- li 
+                            //-     a(href="php/updates.php") A.B.O.U.T U.P.D.A.T.E
+
+mixin footer(footerlast)
+    .footer-last(itemscope itemtype="https://schema.org/WPFooter")
+        p(itemprop="name") Games.Zet 
+        p(itemprop="dateModified") 2023

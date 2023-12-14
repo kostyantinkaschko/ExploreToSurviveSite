@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Host: https://kostyantinkaschko.github.io/ExploreToSurviveSite
+Sitemap https://kostyantinkaschko.github.io/ExploreToSurviveSite/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Host: https://kostyantinkaschko.github.io/ExploreToSurviveSite
+Sitemap https://kostyantinkaschko.github.io/ExploreToSurviveSite/sitemap.xml
+
+User-agent: Yandex
+Allow: /
+Host: https://kostyantinkaschko.github.io/ExploreToSurviveSite
+Sitemap https://kostyantinkaschko.github.io/ExploreToSurviveSite/sitemap.xml

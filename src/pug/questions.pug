@@ -1,0 +1,110 @@
+include components/mixins
+include components/varibles
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="Explore To Survive - це фанатська гра по салкеру (Сталкер клікер) для телефонів на базі Android. Постапокаліптичний клікер зі сталкерською атмосферою та багатою геймплейною інтригою.")
+        meta(name="keywords" content="Explore to Survive, сталкер клікер, сталкер на телефон, Morkovka Zet")
+        meta(name="author" content="Кашко Костянтин")
+        meta(name="publisher" content="Кашко Костянтин")
+        meta(name="copyright" lang="uk" content="Інформація про гру Explore To Survive")
+        link(rel="stylesheet" href="css/style.css")
+        link(rel="shortcut icon" href="img/logo.ico" type="image/x-icon")
+        meta(property="og:title" content="Explore To Survive - фанатська гра про сталкер, клікер сталкер")
+        meta(property="og:description" content="Explore To Survive - це фанатська гра по салкеру (Сталкер клікер) для телефонів на базі Android. Постапокаліптичний клікер зі сталкерською атмосферою та багатою геймплейною інтригою.")
+        meta(property="og:image" content="img/logo.png")
+        meta(property="og:url" content="https://kostyantinkaschko.github.io/ExploreToSurviveSite/index.html")
+        meta(property="og:type" content="video.game")
+        title Гра Explore To Survive - Поширені питання
+    body.black-bg
+        .vignette
+        .secondpage(itemscope itemtype="https://schema.org/FAQPage")
+            header
+                +topline('menu')
+                .wrapper
+                    .information
+                        .text
+                            h1(itemprop="name") Поширені питання
+                        .infa
+                            .left-frame
+                            .platforms
+                                p(itemprop="text") Поширене, але коротке питання чи є гра на IOS, однак гра є лише на андроїд. На IOS її немає. А якщо захочеться на пк пограти можна лише з емулятора.
+                                img(src="img/icongreen.svg" alt="Explore To Survive")
+                            .right-frame
+            main
+                .content
+                    .first-question(itemscope itemtype="https://schema.org/Question" itemprop="acceptedAnswer")
+                        .wrapper   
+                            .header-content
+                                h2(itemprop="name") Де завантажити гру?
+                            .sides
+                                .leftside
+                                    .topside
+                                        p Ви можете завантажити нашу гру через Play Маркет. Просто зайдіть до Play Маркет на своєму пристрої, введіть назву гри та завантажте. 
+                                            a(href="https://play.google.com/store/apps/details?id=com.com.morkovka_zet.ExploretoSurvive.ExploretoSurvive") Або перейдіть за цим посиланням
+                                            |  і завантажте гру.
+                                    .bottomside
+                                        .left-frame
+                                        .frame-object 
+                                            p(itemprop="text") На майбутнє, перед обновленням не забувайте перевіряти, чи можна його обновлювати. А то що буде, якщо оновите, зайдете втратите прогрес, а потім опинеться, що давно було сказано не оновлювати гру через страшну помилку. Краще перестрахуватись:)
+                                            img(src="img/message.png" alt="Explore To Survive зникли предмети")
+                                        .right-frame
+                                .rightside
+                                    img(src="img/kartinkas.png" alt="Explore to Survive скачати")
+
+                    .second-question(itemscope itemtype="https://schema.org/Question" itemprop="acceptedAnswer")
+                        .wrapper 
+                            .header-content 
+                                h2(itemprop="name") Взломана версія гри
+                            .sides
+                                .leftside 
+                                    .topside
+                                        p(itemprop="text") Взлом гри не можливий через захист Unity:
+                                    .bottomside(itemscope itemtype="https://schema.org/Answer")
+                                        ul 
+                                            li
+                                                | 1. Захист від модифікацій: Unity надає можливість
+                                                | обмежити доступ до внутрішніх компонентів гри,
+                                                | запобігаючи недозволеній модифікації коду або ресурсів.
+
+                                            li
+                                                | 2. Шифрування ресурсів: Unity дозволяє зашифровувати
+                                                | ігрові ресурси, Що робить їх важкодоступними для
+                                                | незаконних спроб.
+
+                                            li
+                                                | 3. Анти-шахрайські заходи: Unity має вбудовані функції,
+                                                | які допомагають уникнути підробок та шахрайських дій в грі.
+                                .rightside  
+                                    picture
+                                        source(srcset='img/webp/second-question-screenshot.webp' type='image/webp')
+                                        img(src='img/second-question-screenshot.jpg' alt='Скачати в взлом Explore To Survive')
+
+
+                    .third-question(itemscope itemtype="https://schema.org/Question" itemprop="acceptedAnswer")
+                        .wrapper 
+                            .header-content 
+                                h2(itemprop="name") Система промокдів, та які є промокоди в ETS?
+                            .side(itemscope itemtype="https://schema.org/Answer")
+                                .leftside 
+                                    .topside 
+                                        p Система промокодів - це захоплююча можливість  для вас отримати ексклюзивні предмети, бонуси  чи інші цінності у грі. Промокоди є унікальними кодами, які можна ввести у спеціальне поле, щоб отримати певну нагороду.
+                                    .bottomside 
+                                        p В грі є декілька публічних промокодів:
+                                        ul 
+                                            li(itemprop="text").blue 1.QQQ
+                                            li(itemprop="text").green 2.ARTF
+                                            li(itemprop="text").red 3.Kovbaska
+                                .rightside 
+                                    picture(itemprop="image")
+                                        <source srcset="img/webp/third-question-screenshot.webp" type="image/webp">
+                                        <img src="img/third-question-screenshot.jpg" alt="Explore to Survive коди" itemprop="image">
+            footer 
+                +footer(footerlast)
+
+    script(src="js/scripts.js")
+    script(src="js/bg.js")
