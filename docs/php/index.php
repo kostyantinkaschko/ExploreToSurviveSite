@@ -96,9 +96,9 @@
                     echo "</div>";
                     echo "</div>";
 
-                    // SQL-запит для отримання фотографії за допомогою photo_id, який пов'язаний з записом
+                    // SQL-запит для отримання фотографії за допомогоюid, який пов'язаний з записом
                     $photo_id = $row['id'];
-                    $stmt2 = $conn->prepare("SELECT * FROM `photos` WHERE photo_id = :id");
+                    $stmt2 = $conn->prepare("SELECT * FROM `photos` WHERE id = :id");
                     $stmt2->bindParam(":id", $photo_id);
                     $stmt2->execute();
                     $photo = $stmt2->fetch(PDO::FETCH_ASSOC);
@@ -117,7 +117,11 @@
                     $blockNumber++;
                 }
             } catch (PDOException $e) {
-                echo "Помилка підключення до бази даних: " . $e->getMessage() . ". Сповістіть <a href='https://t.me/megaseII'>це розробникам сайту</a>";
+                echo "
+                    <div class='rightside'>
+                        <p class='error'>Помилка підключення до бази даних: " . $e->getMessage() . ". Сповістіть <a href='https://t.me/megaseII'>це розробникам сайту</a></p>
+                    </div>
+                ";
             }
             ?>
         </main>
