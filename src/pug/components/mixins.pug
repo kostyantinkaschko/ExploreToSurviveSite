@@ -1,10 +1,10 @@
 mixin Vitya(vitya)
     a(href=vitya.href target="_blank")
-        img(src=vitya.img, alt=vitya.alt, itemprop="image")
+        img(src=vitya.img, alt=vitya.alt, itemprop="image" title=vitya.title)
         p(itemprop="headline") #{vitya.header}
         div(class=vitya.icon itemprop="mainEntity")
 mixin topline(menu)
-    .top-line(itemscope itemtype="https://schema.org/SiteNavigationElement" itemprop="mainEntity")
+    .top-line(itemscope itemtype="https://schema.org/SiteNavigationElement")
         .wrapper
             section.rightside
                 .menu

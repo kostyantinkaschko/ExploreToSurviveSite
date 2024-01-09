@@ -22,7 +22,7 @@ html(lang="en")
         title Гра Explore To Survive - Поширені питання
     body.black-bg
         .vignette
-        .secondpage(itemscope itemtype="https://schema.org/FAQPage")
+        .secondpage(itemscope itemtype="https://schema.org/FAQPage" itemprop="mainEntity")
             header
                 +topline('menu')
                 .wrapper
@@ -33,7 +33,7 @@ html(lang="en")
                             .left-frame
                             .platforms
                                 p(itemprop="text") Поширене, але коротке питання чи є гра на IOS, однак гра є лише на андроїд. На IOS її немає. А якщо захочеться на пк пограти можна лише з емулятора.
-                                img(src="img/icongreen.svg" alt="Explore To Survive")
+                                img(src="img/icongreen.svg" alt="Explore To Survive" title="Відповідь на поширені питання тут. Листай вниз ↓.")
                             .right-frame
             main
                 .content
@@ -51,10 +51,10 @@ html(lang="en")
                                         .left-frame
                                         .frame-object 
                                             p(itemprop="text") На майбутнє, перед обновленням не забувайте перевіряти, чи можна його обновлювати. А то що буде, якщо оновите, зайдете втратите прогрес, а потім опинеться, що давно було сказано не оновлювати гру через страшну помилку. Краще перестрахуватись:)
-                                            img(src="img/message.png" alt="Explore To Survive зникли предмети")
+                                            img(src="img/message.png" alt="Explore To Survive зникли предмети" title="В той день багато людей втратили свої речі. А Вітя довго працював над фіксом. Звісно ж, після фіксу речі що були втрачені, було повернуто.")
                                         .right-frame
                                 .rightside
-                                    img(src="img/kartinkas.png" alt="Explore to Survive скачати")
+                                    img(src="img/kartinkas.png" alt="Explore to Survive скачати" title="Explore To Survive в плей маркеті.")
 
                     .second-question(itemscope itemtype="https://schema.org/Question" itemprop="acceptedAnswer")
                         .wrapper 
@@ -82,7 +82,7 @@ html(lang="en")
                                 .rightside  
                                     picture
                                         source(srcset='img/webp/second-question-screenshot.webp' type='image/webp')
-                                        img(src='img/second-question-screenshot.jpg' alt='Скачати в взлом Explore To Survive')
+                                        img(src='img/second-question-screenshot.jpg' alt='Скачати в взлом Explore To Survive' title="Взлому ETS немає. Навіть не намагайтесь його шукати.")
 
 
                     .third-question(itemscope itemtype="https://schema.org/Question" itemprop="acceptedAnswer")
@@ -101,8 +101,8 @@ html(lang="en")
                                             li(itemprop="text").red 3.Kovbaska
                                 .rightside 
                                     picture(itemprop="image")
-                                        <source srcset="img/webp/third-question-screenshot.webp" type="image/webp">
-                                        <img src="img/third-question-screenshot.jpg" alt="Explore to Survive коди" itemprop="image">
+                                        source(srcset="img/webp/third-question-screenshot.webp" type="image/webp")
+                                        img(src="img/third-question-screenshot.jpg" alt="Explore to Survive коди" itemprop="image" title="Промокод QQQ, Explore To Survive")
             footer 
                 +footer(footerlast)
 
