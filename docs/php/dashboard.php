@@ -3,7 +3,7 @@ session_start(); // Почати сесію
 
 // Перевірка, чи користувач авторизований
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php"); // Перенаправлення на сторінку входу
+    header("Location: index.php"); // Перенаправлення на сторінку входу
     exit();
 }
 
