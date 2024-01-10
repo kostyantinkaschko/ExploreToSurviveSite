@@ -422,7 +422,10 @@ header
 
                     .slider
                         display: flex
+                        transition: ease .5s all
                         animation: slide 30s linear infinite
+                        &:hover
+                            filter: brightness(2)
                         picture
                             width: 100%
                             height: auto
