@@ -193,8 +193,9 @@ header
                     border-radius: 50rem
                     // margin-right: 70rem
                 .menu-list li:first-child
-                    display: flex
-                    align-items: center
+                    +media(445)
+                        display: flex
+                        align-items: center
                 p
                     margin: 0
 
@@ -770,6 +771,7 @@ footer
             display: flex
             flex-direction: column
             row-gap: 30rem
+            text-align: center
             img
                 position: relative
                 width: 100rem
