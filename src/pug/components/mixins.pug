@@ -1,6 +1,6 @@
 mixin Vitya(vitya)
-    a(href=vitya.href target="_blank")
-        img(src=vitya.img, alt=vitya.alt, itemprop="image" title=vitya.title)
+    a(href=vitya.href target="_blank" class=vitya.hover)
+        img(src=vitya.img, alt=vitya.alt, itemprop="image" title=vitya.title) 
         p(itemprop="headline") #{vitya.header}
         div(class=vitya.icon itemprop="mainEntity")
 mixin topline(menu)
